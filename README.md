@@ -1,4 +1,5 @@
-# Building a Modern Version of SocialCalc using Node.js, Go, or Django can use AI tools like copilot.
+# Development of a mobile application to provide recreational suitability information of beach locations across India.
+
 
 This README provides an overview of the project, including team details, relevant links, tasks completed, tech stack, key features, and steps to run the project locally.
 
@@ -17,17 +18,17 @@ This README provides an overview of the project, including team details, relevan
 - **Ishan Mangotra** - 2022UIT3076 - [@Ishan-2504](https://github.com/Ishan-2504)
 - **Shreya Goel** - 2022UIT3039 - [@Shreyaaagoel](https://github.com/Shreyaaagoel)
 
-## Project Title: SheetsX
+## Project Title: Beach Safe
 
 ## Project Description
 
-**SheetsX** is a comprehensive web application designed to streamline the management and collaboration of spreadsheets. Built with Next.js, SheetsX allows users to create, edit, and collaborate on spreadsheets with real-time updates and interactive features. 
+**Beach Safe** is a mobile application developed to ensure the safety of tourists visiting India's beaches. The app provides real-time information on the suitability of beaches for recreational activities by analyzing ocean and meteorological conditions such as wave heights, ocean currents, and wind speed, sourced via the INCOIS API. 
+
+Developed using Kotlin for native Android development and XML for UI design, Beach Safe integrates the Google Maps API for visualizing beach locations and MPAndroidChart for displaying real-time data trends. Firebase is utilized as the NoSQL database to store beach information, user preferences, and manage real-time notifications. Users can bookmark beaches and recreational activities, and the app will soon include features to provide personalized safety alerts based on user location, ensuring they are always informed of any potential safety concerns.
 
 
 ## Project Links
 
-- *Internal Presentation:* [https://github.com/nitingoyal123/SIH_INTERNAL_ROUND_1_BITWISE-INNOVATORS/blob/main/files/INTERNAL_PPT_BITWISE_INNOVATORS.pdf] 
-- *Final SIH Presentation:* [https://github.com/nitingoyal123/SIH_INTERNAL_ROUND_1_BITWISE-INNOVATORS/blob/main/files/SIH_PPT_BITWISE_INNOVATORS.pdf] 
-- *Video Demonstration:* [https://youtu.be/UfOxu5EHxKg]  
-- *Live Deployment:* [https://sheetsx.vercel.app] 
-- *Source Code:* [https://github.com/nitingoyal123/SIH_INTERNAL_ROUND_1_BITWISE-INNOVATORS/tree/main/code]
+- *Final SIH Presentation:* [] 
+- *Video Demonstration:* []  
+- *Source Code:* []
