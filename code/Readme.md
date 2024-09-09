@@ -1,39 +1,49 @@
 
 ## Tasks Accomplished
 
-- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality with Firebase Authentication to securely manage user access to the sheets.
-- [x] **Collaborative Sheet Editing:** Enabled real-time collaborative editing of sheets, allowing multiple users to work on the same sheet simultaneously with conflict resolution mechanisms.
-- [x] **Email Notifications:** Integrated email notification system to inform users when they are added as collaborators to a sheet.
-
+- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
+- [x] **Beach Information Storage:**  Used Firebase as a NoSQL database to store beach information and recreational activity data.
+- [x] **Google Maps Integration:**  Integrated Google Maps API to visualize beach locations and their suitability.
+- [x] **User Preferences:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
+- [x] **Data Visualizations:** Used MPAndroidChart to display weather and oceanic data in an easy-to-read format.
+- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
 
 ## Technology Stack
 
 This project leverages the following technologies:
 
-- **[Next.js](https://nextjs.org/):** A React framework that allows for server-side rendering and static site generation, chosen for its performance benefits and ability to create optimized, SEO-friendly pages.
-- **[Firebase](https://firebase.google.com/):** Used for authentication, real-time database, and hosting due to its scalability.
-- **[Tailwind CSS](https://tailwindcss.com/):** A utility-first CSS framework that allowed us to quickly style the application with a consistent and responsive design.
-- **[Node.js](https://nodejs.org/en):** Powers the backend API, handling tasks such as sending email notifications and managing server-side logic.
+ 
+## Technology Stack
+
+This project leverages the following technologies:
+
+- **[Kotlin](https://kotlinlang.org/):** A modern programming language used for Android app development, chosen for its concise syntax and seamless interoperability with Java.
+  
+- **[XML](https://developer.android.com/guide/topics/resources/layout-resource):** Used for designing the app's user interface, enabling a clear and structured approach to building layouts.
+
+- **[Firebase](https://firebase.google.com/):** A NoSQL cloud database and backend service used for real-time data storage, and user authentication.
+
+- **[Google Maps API](https://developers.google.com/maps):** Integrated for displaying beach locations and providing geospatial visualizations, enhancing user experience with interactive maps.
+
+- **[MPAndroidChart](https://github.com/PhilJay/MPAndroidChart):** A powerful chart library for Android used to visualize beach conditions such as oceanic alerts, wave height, and weather data, providing easy-to-read insights for users.
   
 ## Key Features
 
-- **Add Collaborators:** Users can add new collaborators to specific sheets, enabling teamwork and shared access to important data.
-- **Search Functionality:** Allows users to quickly search and filter through their sheets, making it easier to locate specific documents.
-- **Real-time Collaboration:** Users can collaboratively edit sheets in real-time, with updates reflected immediately for all collaborators.
-- **Email Invitations:** Automatically sends an email invitation to users added as collaborators, with a direct link to the sheet.
-- **Context Menu Options:** Provides a custom context menu for quick access to common actions like saving the sheet and adding collaborators.
-
+- **feature 1:**  explain in few words (atmost 20 words)
+- **feature 2:**
+- **feature 3:**
+    
 ## Local Setup Instructions (Write for both windows and macos)
 
-Follow these steps to run the project locally
+Follow these steps to run the project locally.
 
 1. **Clone the Repository**
 
     On both Windows and macOS, start by cloning the repository:
 
    ```bash
-   git clone https://github.com/nitingoyal123/SIH_INTERNAL_ROUND_1_BITWISE-INNOVATORS
-   cd SIH_INTERNAL_ROUND_1_BITWISE-INNOVATORS/code
+   git clone https://github.com/nitingoyal123/SIH_BITWISE-INNOVATORS
+   cd SIH_BITWISE-INNOVATORS/code
    ```
 2. **Install Dependencies**
 
