@@ -1,16 +1,12 @@
 
 ## Tasks Accomplished
 
-- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
-- [x] **Beach Information Storage:**  Used Firebase as a NoSQL database to store beach information and recreational activity data.
+- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for _secure access_.
+- [x] **Beach Information Storage:**  Used **Firebase** as a NoSQL database to store beach information and recreational activity data.
 - [x] **Google Maps Integration:**  Integrated Google Maps API to visualize beach locations and their suitability.
 - [x] **User Preferences:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
-- [x] **Data Visualizations:** Used MPAndroidChart to display weather and oceanic data in an easy-to-read format.
+- [x] **Data Visualizations:** Used **MPAndroidChart** to display weather and oceanic data in an _easy-to-read format_.
 - [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
-
-## Technology Stack
-
-This project leverages the following technologies:
 
  
 ## Technology Stack
@@ -29,13 +25,20 @@ This project leverages the following technologies:
   
 ## Key Features
 
-- **feature 1:**  explain in few words (atmost 20 words)
-- **feature 2:**
-- **feature 3:**
+- **User Authentication & Preferences Management:** Users can sign in, manage preferences, and bookmark beaches for quick access.
+- **Real-Time Notifications:** Alerts users to safety concerns (e.g., storms, currents) based on their location.
+- **Interactive Maps:** Google Maps integration helps users visualize beaches and nearby accommodation options.
+- **Data Visualization**: Uses charts to show current beach conditions like wave heights, wave direction, tidal elevation and other coastal parameters.
+- **Bookmarking Beaches:**  Users can bookmark their favorite beaches and activities for future reference.
     
 ## Local Setup Instructions (Write for both windows and macos)
 
-Follow these steps to run the project locally.
+Follow these steps to set up the project on Android Studio.
+
+**Prerequisites**
+
+**JDK**: Ensure you have Java Development Kit (JDK 8+) installed. You can download the JDK from the official site: JDK Downloads
+**Android Studio**: Download and install the latest version of Android Studio from: Android Studio Downloads
 
 1. **Clone the Repository**
 
@@ -45,45 +48,21 @@ Follow these steps to run the project locally.
    git clone https://github.com/nitingoyal123/SIH_BITWISE-INNOVATORS
    cd SIH_BITWISE-INNOVATORS/code
    ```
-2. **Install Dependencies**
+2. Install Android Studio:
+   Run the installer and follow the steps to install Android Studio.
+   During installation, choose the default options for SDK and virtual devices.
 
-   On both Windows and macOS, install the project dependencies:
+3. **Open in Android Studio**
 
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+ - Open Android Studio and select Open an existing project.
+ - Navigate to the folder where you cloned the project.
    
-3. **Set Up Firebase**
+4. **Set Up Firebase**
 
  -  Go to the [Firebase Console](https://console.firebase.google.com/) and create a new project.
  -  Enable Authentication, Firestore Database and Realtime Database.  
 
-4. **Set Up Environment Variables**
+5. **Run the App**
 
-   Create a .env.local file in the root directory of your project. Copy the content from .env.example and replace with your credentials.
-
-4. **Run the Development Server**
-
-### Windows:
-    
-   Run the development server using the following command:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-### macOS:
-   
-   The command to run the development server is the same:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-5. The website will be running at [http://localhost:3000](http://localhost:3000) .
+   Click on the **Run button** or use **Shift + F10** to build and run the app on a _connected device or emulator_.
+  
