@@ -43,8 +43,8 @@ Follow these steps to set up the project on Android Studio.
     On both Windows and macOS, start by cloning the repository:
 
    ```bash
-   git clone https://github.com/ repo name
-   cd repo name/code
+   git clone https://github.com/RashidSiddiqui2004/SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS.git
+   cd SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS/code
    ```
 2. Install Android Studio:
    Run the installer and follow the steps to install Android Studio.
