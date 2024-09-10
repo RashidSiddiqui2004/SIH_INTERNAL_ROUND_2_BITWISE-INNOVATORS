@@ -20,7 +20,7 @@
     <item
         android:id="@+id/navigation_chatbot"
         android:icon="@drawable/chatbot"
-        android:title="Chatbot" />
+        android:title="S.E.A" />
 
     <item
         android:id="@+id/navigation_settings"

@@ -7,19 +7,53 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:foregroundGravity="center">
 
         <ImageView
+            android:id="@+id/botSoon"
             android:layout_width="@dimen/_200sdp"
             android:layout_height="@dimen/_200sdp"
             android:src="@drawable/coming_soon_image"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Abbreviation Text -->
+        <TextView
+            android:id="@+id/tvExploreCities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_bold"
+            android:padding="3dp"
+            android:text="S.E.A."
+            android:textSize="@dimen/_26ssp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/botSoon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="@dimen/_16sdp" />
 
+        <!-- Full form Text -->
+        <TextView
+            android:id="@+id/tvFullForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/raleway_sembold"
+            android:padding="3dp"
+            android:text="Shoreline  Exploration Assistant"
+            android:textSize="@dimen/_16ssp"
+            app:layout_constraintTop_toBottomOf="@id/tvExploreCities"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_8sdp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 </layout>

@@ -150,8 +150,6 @@ class HomeFragment : Fragment() {
         val entries = ArrayList<Entry>()
         val xAxisLabels = ArrayList<String>()
 
-        // Fetch the list of forecast data for the beachId
-//        val list = BeachForecastData.beachIdToForecastData[14]
         if (list != null && list.isNotEmpty()) {
             val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault())
             val displayFormat = SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
@@ -212,12 +210,11 @@ class HomeFragment : Fragment() {
         }
     }
 
-    // Inside a regular function (e.g., in a fragment's onCreateView method)
     fun someFunction() {
         CoroutineScope(Dispatchers.Main).launch {
             try {
-                val data = BeachForecastData.getForABeach(14) // Suspended call
-                plotRCRData(data) // Process the data once it's available
+                val data = BeachForecastData.getForABeach(14)
+                plotRCRData(data)
                 binding.msg.visibility = View.VISIBLE
                 binding.msg.setTextColor(resources.getColor(R.color.unsafe))
             } catch (e: Exception) {

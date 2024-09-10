@@ -212,7 +212,7 @@ class ResultActivity : AppCompatActivity() {
             }
 
 
-            val dataSet = LineDataSet(entries, "").apply {
+            val dataSet = LineDataSet(entries, label).apply {
                 color = ContextCompat.getColor(this@ResultActivity, android.R.color.holo_blue_dark)
                 lineWidth = 2f
                 valueTextColor = ContextCompat.getColor(this@ResultActivity, android.R.color.black)
