@@ -29,6 +29,6 @@ Developed using Kotlin for native Android development and XML for UI design, Bea
 
 ## Project Links
 
-- *Final SIH Presentation:* [https://github.com/RashidSiddiqui2004/SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS/blob/main/files/SIH_PPT_BITWISE_INNOVATORS.pdf] 
+- *Final SIH Presentation:* [https://github.com/RashidSiddiqui2004/SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS/blob/main/files/SIH_PPT_BITWISE_INNOVATORS.txt] 
 - *Video Demonstration:* [https://github.com/RashidSiddiqui2004/SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS/blob/main/files/Video_LINK_BITWISE_INNOVATORS.txt]  
 - *Source Code:* [https://github.com/RashidSiddiqui2004/SIH_INTERNAL_ROUND_2_BITWISE-INNOVATORS/tree/main/code]
