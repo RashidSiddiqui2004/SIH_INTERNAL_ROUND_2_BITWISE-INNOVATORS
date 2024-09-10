@@ -5,10 +5,8 @@
 - [x] **Beach Information Storage:**  Used **Firebase** as a NoSQL database to store beach information and recreational activity data.
 - [x] **Google Maps Integration:**  Integrated Google Maps API to visualize beach locations and their suitability.
 - [x] **User Preferences:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
-- [x] **Data Visualizations:** Used **MPAndroidChart** to display weather and oceanic data in an _easy-to-read format_.
-- [x] **User Authentication & Authorization:**  Implemented user registration and login functionality using Firebase Authentication for secure access.
+- [x] **Data Visualizations:** Used **MPAndroidChart** to display weather and oceanic data in an _easy-to-read format_. 
 
- 
 ## Technology Stack
 
 This project leverages the following technologies:
@@ -35,7 +33,7 @@ This project leverages the following technologies:
 
 Follow these steps to set up the project on Android Studio.
 
-**Prerequisites**
+**Pre-requisites**
 
 **JDK**: Ensure you have Java Development Kit (JDK 8+) installed. You can download the JDK from the official site: JDK Downloads
 **Android Studio**: Download and install the latest version of Android Studio from: Android Studio Downloads
@@ -45,8 +43,8 @@ Follow these steps to set up the project on Android Studio.
     On both Windows and macOS, start by cloning the repository:
 
    ```bash
-   git clone https://github.com/nitingoyal123/SIH_BITWISE-INNOVATORS
-   cd SIH_BITWISE-INNOVATORS/code
+   git clone https://github.com/ repo name
+   cd repo name/code
    ```
 2. Install Android Studio:
    Run the installer and follow the steps to install Android Studio.
