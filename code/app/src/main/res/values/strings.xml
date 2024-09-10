@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">SafeCoast</string>
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="settings">Settings</string>
+    <string name="map">Map</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="searchText">Where are you going?</string>
+    <string name="exploreMsg">Explore Beautiful Places</string>
+
+    <string name="userProfile">User profile image</string>
+    <string name="dummyEmail">johndoe@gmail.com</string>
+
+    <string name="signupMSg">Create account</string>
+    <string name="loginMsg">Already have an account? Login</string>
+    <string name="forgotPassword">Forgot password ?</string>
+    <string name="beach_image">Random Beach Image for Map Page</string>
+
+    <string name="search">Search</string>
+    <string name="search_icon">Search Icon</string>
+
+
+    <!--    settings page   -->
+    <string name="settings_header">Settings</string>
+
+
+    <!--    Bookmarks page   -->
+    <string name="bookmarkBeaches">Your Bookmarked Beaches</string>
+    <string name="bookmarkActivities">Your Bookmarked Activities</string>
+    <string name="bookmarkAttractions">Your Bookmarked Attractions</string>
+
+    <!--    About App page   -->
+    <string name="technology_credits_info">
+        This app was developed using Kotlin and Android SDK. Key technologies used include:\n\n
+        1. Google Maps API: For displaying beach locations and providing navigation.\n\n
+        2. MOSDAC API: For retrieving real-time weather and oceanic conditions.\n\n
+        3. Firebase: For backend services, including real-time data and user authentication.\n\n
+    </string>
+
+    <string name="resources_used_title">Resources Used</string>
+
+    <string name="resources_used_info">
+        1. Indian National Centre for Ocean Information Services (INCOIS)\n\n
+           INCOIS provides critical oceanographic and environmental data. Key Parameters: Drifting Buoy Program, Wave Rider Buoy.\n\n
+
+           - Key Parameters Studied: Drifting Buoy Program, Wave Rider Buoy\n\n
+           - Drifting Buoy Data: Provides data on surface currents, atmospheric pressure, and sea surface temperature via Argos satellite systems.\n\n
+           - Wave Rider Buoy Data: Measures wave height, direction, and period for various coastal locations.\n\n
+
+        2. MOSDAC - Meteorological and Oceanographic Satellite Data Archival Centre\n\n
+           MOSDAC, an initiative by the Indian Space Research Organisation (ISRO), serves as a portal for satellite data related to meteorology and oceanography.
+
+    </string>
+
+</resources>

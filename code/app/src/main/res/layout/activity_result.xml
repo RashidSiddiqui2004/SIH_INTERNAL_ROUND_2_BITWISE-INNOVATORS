@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ResultActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="@dimen/_10sdp">
+
+
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:src="@drawable/back_arrow" />
+
+
+            <TextView
+                android:id="@+id/txt_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:fontFamily="@font/raleway_bold"
+                android:textSize="@dimen/_23ssp" />
+
+        </Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="-5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                android:padding="16dp">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_90sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:elevation="4dp"
+                        android:radius="12dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <ImageView
+                            android:id="@+id/beachImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/beach_photo"/>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                <TextView
+                    android:id="@+id/beachName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beach Name"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textColor="#085793"
+                    android:fontFamily="@font/raleway_bold"
+                    android:contentDescription="Beach Name for the selected beach"/>
+
+                <!--    <TextView-->
+                <!--        android:id="@+id/beachLocation"-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:text="Maharashtra, India"-->
+                <!--        android:textSize="@dimen/_10ssp"-->
+                <!--        android:textStyle="bold"-->
+                <!--        android:paddingTop="@dimen/_2sdp"-->
+                <!--        android:fontFamily="@font/raleway_bold"-->
+                <!--        android:contentDescription="Beach Name for the selected beach"/>-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center" >
+
+                    <!-- Safety Icon -->
+                    <ImageView
+                        android:id="@+id/safetyIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/safe_beach"
+                        app:tint="@color/safe"
+                        android:layout_marginEnd="16dp"/>
+
+                    <!-- Safety Text -->
+                    <TextView
+                        android:id="@+id/safetyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Safe for swimming"
+                        android:fontFamily="@font/raleway_bold"
+                        android:textColor="#1A661E"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/rounded_card"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:elevation="@dimen/_5sdp"
+                    >
+
+                    <!-- Card for Wave Height -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_20sdp"
+                        android:radius="12dp"
+                        android:elevation="6dp"
+                        app:cardBackgroundColor="#FFFBFB"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp">
+
+                            <!-- Icon to indicate increase/decrease -->
+                            <ImageView
+                                android:id="@+id/waveHeightIcon"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/increasing_parameter"
+                                app:tint="@color/increasing"
+                                android:layout_marginBottom="8dp"/>
+
+                            <!-- Percentage Value -->
+                            <TextView
+                                android:id="@+id/waveHeightValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10%"
+                                android:fontFamily="@font/raleway_bold"
+                                android:textSize="@dimen/_12ssp"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:layout_gravity="center"/>
+
+                            <!-- Parameter Label -->
+                            <TextView
+                                android:id="@+id/waveHeightLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wave Height"
+                                android:textSize="@dimen/_8ssp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <!-- Card for Wave Period -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:padding="@dimen/_20sdp"
+                        android:radius="12dp"
+                        android:elevation="6dp"
+                        app:cardBackgroundColor="#FFFBFB"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/wavePeriodIcon"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/decreasing_paramter"
+                                app:tint="@color/decreasing"
+                                android:layout_marginBottom="8dp"/>
+
+                            <!-- Value of Wave Period -->
+                            <TextView
+                                android:id="@+id/wavePeriodValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-5%"
+                                android:fontFamily="@font/raleway_bold"
+                                android:textSize="@dimen/_12ssp"
+                                android:textColor="@color/black"
+                                android:gravity="center" />
+
+                            <!-- Label for Wave Period -->
+                            <TextView
+                                android:id="@+id/wavePeriodLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Wave Period"
+                                android:textSize="@dimen/_8ssp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Card for Tidal Elevation -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:padding="@dimen/_20sdp"
+                        android:radius="12dp"
+                        android:elevation="6dp"
+                        app:cardBackgroundColor="#FFFBFB"
+                        app:cardCornerRadius="16dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/tidalElevationIcon"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/increasing_parameter"
+                                app:tint="@color/increasing"
+                                android:layout_marginBottom="8dp"/>
+
+                            <!-- Value of Tidal Elevation -->
+                            <TextView
+                                android:id="@+id/tidalElevationValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="15%"
+                                android:fontFamily="@font/raleway_bold"
+                                android:textSize="@dimen/_12ssp"
+                                android:textColor="@color/black"
+                                android:gravity="center" />
+
+                            <!-- Label for Tidal Elevation -->
+                            <TextView
+                                android:id="@+id/waveDirectionLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tidal Elevation"
+                                android:textSize="@dimen/_8ssp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:layout_marginTop="8dp"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp">
+
+                    <!-- View Itinerary Button -->
+                    <Button
+                        android:id="@+id/btnViewItinerary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Itinerary"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/raleway_sembold"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:paddingHorizontal="@dimen/_16sdp"
+                        android:elevation="@dimen/_2sdp"
+                        android:backgroundTint="#68BBE3"
+                        android:textStyle="normal"/>
+
+                    <Button
+                        android:id="@+id/btnAddToWishlist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add to Wishlist"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:paddingHorizontal="@dimen/_16sdp"
+                        android:fontFamily="@font/raleway_sembold"
+                        android:backgroundTint="#68BBE3"
+                        android:elevation="2dp"
+                        android:textStyle="normal"/>
+
+<!--                        android:backgroundTint="@color/buttonBackgroundLight"-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txt_tidal_height_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Tidal Elevation"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChartTidalHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"/>
+
+                <TextView
+                    android:id="@+id/txt_wave_height_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Wave Height"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="@dimen/_10ssp"/>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_wave_height"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"/>
+
+                <TextView
+                    android:id="@+id/txt_wave_period_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Wave Period"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_wave_period"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp" />
+
+                <TextView
+                    android:id="@+id/txt_rcr_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Rip Current Risk"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart_rcr"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_marginHorizontal="@dimen/_16sdp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:clickable="false"-->
+<!--            android:visibility="invisible"-->
+<!--            android:id="@+id/cardview_unsafe_place"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_140sdp"-->
+<!--            app:cardCornerRadius="@dimen/_8sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/scrollView2"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="@dimen/_10sdp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="This beach is not safe to visit in these days. Do you still want to proced further ?"-->
+<!--                    android:textSize="@dimen/_13ssp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_yes"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                    android:paddingStart="@dimen/_30sdp"-->
+<!--                    android:paddingEnd="@dimen/_30sdp"-->
+<!--                    android:text="Yes"-->
+<!--                    android:textSize="@dimen/_17ssp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_no"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                    android:padding="@dimen/_7sdp"-->
+<!--                    android:paddingStart="@dimen/_30sdp"-->
+<!--                    android:paddingEnd="@dimen/_30sdp"-->
+<!--                    android:text="No"-->
+<!--                    android:textSize="@dimen/_17ssp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:clickable="false"-->
+<!--            android:visibility="invisible"-->
+<!--            android:id="@+id/cardview_safe_place"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_140sdp"-->
+<!--            app:cardCornerRadius="@dimen/_8sdp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/scrollView2"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:padding="@dimen/_10sdp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="koi acha message"-->
+<!--                    android:textSize="@dimen/_13ssp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_explore_more"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                    android:paddingStart="@dimen/_30sdp"-->
+<!--                    android:paddingEnd="@dimen/_30sdp"-->
+<!--                    android:text="Explore more"-->
+<!--                    android:textSize="@dimen/_17ssp"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

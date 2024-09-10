@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- res/layout/activity_about.xml -->
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_18sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- App Title -->
+            <TextView
+                android:id="@+id/aboutAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Beach Safety App"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/raleway_bold"/>
+
+            <!-- App Description -->
+            <TextView
+                android:id="@+id/aboutAppDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_sembold"
+                android:text="Welcome to the Beach Safety App, your go-to solution for ensuring a safe and enjoyable beach experience. Our app provides real-time safety information and alerts about coastal conditions, helping you make informed decisions before heading to the beach."
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+
+            <!-- Resources Used Title -->
+            <TextView
+                android:id="@+id/resourcesUsedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resources_used_title"
+                android:fontFamily="@font/raleway_sembold"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/resourcesUsedInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resources_used_info"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/technologyCreditsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Technology and Credits"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/raleway_sembold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Technology and Credits Information -->
+            <TextView
+                android:id="@+id/technologyCreditsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/technology_credits_info"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <!-- App Description Text -->
+                <TextView
+                    android:id="@+id/aboutAppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This app was developed as part of the Smart India Hackathon 2024."
+                    android:textSize="16sp"
+                    android:fontFamily="@font/raleway_sembold"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- Hackathon Logo -->
+                <ImageView
+                    android:id="@+id/hackathonLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sih_logo"
+                android:contentDescription="Hackathon Logo"
+                android:layout_marginBottom="16dp"/>
+
+                <!-- Hackathon Name -->
+                <TextView
+                    android:id="@+id/hackathonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Smart India Hackathon 2024"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textColor="@android:color/black"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/contactInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For more information, contact us at: support@beachsafetyapp.com"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
